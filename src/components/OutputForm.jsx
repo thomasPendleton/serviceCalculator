@@ -20,13 +20,10 @@ const OutputForm = () => {
           return (
             <div key={idx}>
 
-
               <button onClick={(e) => deleteRecord(mile)}><BiTrash/></button>
 
 
-
-
-              <h2>{date}</h2>
+              <h2 contentEditable="true" className="date">{date}</h2>
               {/* <h2 contentEditable="true">{item.mile}</h2> */}
               <h2>{numberMile.toLocaleString()}</h2>
               <h2 className={deviationTotal > 15000 ? "deviation" : null}>
@@ -44,6 +41,7 @@ const Wrapper = styled.section`
   div {
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr;
+    /* grid-template-rows: 50px; */
     h2 {
       margin: 5px 10px;
       /* background-color: yellow; */
@@ -59,6 +57,9 @@ const Wrapper = styled.section`
     }
     .deviation {
       background-color: red;
+    }
+    .date{
+      max-height: 100%;
     }
   }
 `

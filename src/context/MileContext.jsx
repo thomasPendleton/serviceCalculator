@@ -38,3 +38,10 @@ const deleteRecord = (record) => {
 }
 
 export { MileContext, MileContextProvider }
+
+// --------------Todo List---------------
+// Change Date input to text input form
+// if the mileage input is the same, handle duplicate input.
+// ie, replace previous data with new input...
+// make the date editable
+// Make it look better on small screen. change font size?

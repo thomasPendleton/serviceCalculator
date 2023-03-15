@@ -32,7 +32,7 @@ const InputForm = () => {
         <input type="text" name="vin"  />
         <br /> */}
         <label htmlFor="date">date: </label>
-        <input type="date" value={date} onChange={(e) => handleDateChange(e)} />
+        <input type="text" value={date} onChange={(e) => handleDateChange(e)} />
         <label htmlFor="date">mileage: </label>
         <input
           type="number"
@@ -54,11 +54,15 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    
   }
-
+  label{
+    font-size: 1.2rem;
+  }
   input {
     width: 50%;
     padding: 15px;
+    font-size: 1.3rem;
   }
   button {
     margin: 20px 0;
