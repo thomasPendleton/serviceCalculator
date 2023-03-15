@@ -67,7 +67,7 @@ const Wrapper = styled.section`
       background-color: red;
     }
     .date {
-      max-height: 100%;
+
     }
   }
 `
