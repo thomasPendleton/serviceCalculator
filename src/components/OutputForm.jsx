@@ -18,7 +18,7 @@ const OutputForm = () => {
           const deviationTotal = idx > 0 && item.mile - mileData[idx - 1].mile
           const numberMile = +mile
           return (
-            <div key={idx}>
+            <div className="outputDiv" key={idx}>
 
               <button onClick={(e) => deleteRecord(mile)}><BiTrash/></button>
 
@@ -37,14 +37,22 @@ const OutputForm = () => {
 }
 
 const Wrapper = styled.section`
-  height: 500px;
+  /* height: 500px; */
+  border: 1px solid rgba(3, 3, 3, 0.4);
+ 
   div {
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr;
+    background-color: rgba(173, 216, 230, 0.7);
+    border-bottom: 1px solid rgba(3, 3, 3, 0.4);
+    border-right: 1px solid rgba(3, 3, 3, 0.4);
+
     /* grid-template-rows: 50px; */
     h2 {
-      margin: 5px 10px;
-      /* background-color: yellow; */
+      margin: 0;
+      padding: 10px 5px;
+      border-right: 1px solid rgba(3, 3, 3, 0.4);
+
     }
     button {
       display: grid;
@@ -58,7 +66,7 @@ const Wrapper = styled.section`
     .deviation {
       background-color: red;
     }
-    .date{
+    .date {
       max-height: 100%;
     }
   }
