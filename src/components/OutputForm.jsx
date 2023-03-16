@@ -41,14 +41,14 @@ const Wrapper = styled.section`
   border: 1px solid rgba(3, 3, 3, 0.4);
   font-size: 0.6rem;
   border-radius: 1px;
-
+  color: #333;
   div {
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr;
     background-color: rgba(193, 239, 255, 0.7);
     border-bottom: 1px solid rgba(3, 3, 3, 0.4);
     border-right: 1px solid rgba(3, 3, 3, 0.4);
-
+    
     /* grid-template-rows: 50px; */
     h2 {
       margin: 0;
@@ -59,11 +59,11 @@ const Wrapper = styled.section`
       display: grid;
       place-content: center;
       cursor: pointer;
-
+      
       font-size: 1.5rem;
       margin: 5px 5px;
       background-color: orangered;
-     
+      
     }
     .deviation {
       background-color: red;

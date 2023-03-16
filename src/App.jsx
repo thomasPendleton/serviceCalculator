@@ -12,8 +12,10 @@ function App() {
 }
 
 const Wrapper = styled.main`
-text-align: center;
-
+  text-align: center;
+  h1 {
+    color: #333;
+  }
 `
 
 export default App
