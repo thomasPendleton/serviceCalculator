@@ -31,9 +31,9 @@ const InputForm = () => {
         {/* <label htmlFor="vin">VIN</label>
         <input type="text" name="vin"  />
         <br /> */}
-        <label htmlFor="date">date: </label>
+        <label htmlFor="date">Date: </label>
         <input type="text" value={date} onChange={(e) => handleDateChange(e)} />
-        <label htmlFor="date">mileage: </label>
+        <label htmlFor="date">Mileage: </label>
         <input
           type="number"
           value={mileage}
@@ -54,9 +54,8 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    
   }
-  label{
+  label {
     font-size: 1.2rem;
   }
   input {
@@ -72,6 +71,9 @@ const Wrapper = styled.section`
     border-radius: 5px;
     &:hover {
       opacity: 0.9;
+    }
+    &:active {
+      background-color: #4e8500;
     }
   }
   /* border: 1px solid yellow; */

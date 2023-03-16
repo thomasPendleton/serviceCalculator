@@ -39,11 +39,13 @@ const OutputForm = () => {
 const Wrapper = styled.section`
   /* height: 500px; */
   border: 1px solid rgba(3, 3, 3, 0.4);
- 
+  font-size: 0.6rem;
+  border-radius: 1px;
+
   div {
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr;
-    background-color: rgba(173, 216, 230, 0.7);
+    background-color: rgba(193, 239, 255, 0.7);
     border-bottom: 1px solid rgba(3, 3, 3, 0.4);
     border-right: 1px solid rgba(3, 3, 3, 0.4);
 
@@ -52,7 +54,6 @@ const Wrapper = styled.section`
       margin: 0;
       padding: 10px 5px;
       border-right: 1px solid rgba(3, 3, 3, 0.4);
-
     }
     button {
       display: grid;
@@ -62,12 +63,18 @@ const Wrapper = styled.section`
       font-size: 1.5rem;
       margin: 5px 5px;
       background-color: orangered;
+     
     }
     .deviation {
       background-color: red;
     }
     .date {
-
+    }
+    @media only screen and (min-width: 499px) {
+      font-size: 0.8rem;
+    }
+    @media only screen and (min-width: 600px) {
+      font-size: 1rem;
     }
   }
 `

@@ -15,7 +15,7 @@ const DisplayBox = () => {
 const Wrapper = styled.main`
 
   margin: 0 auto;
-  width: clamp(50%, 90%, 700px ) ;
+  width: clamp(50%, 90%, 600px ) ;
   /* border: 1px solid red; */
   height: 100vh;
 `
